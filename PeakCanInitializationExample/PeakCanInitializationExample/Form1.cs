@@ -1,4 +1,6 @@
 
+// Author: Tunahan KÖSEOÐLU 
+
 using System;
 using System.Windows.Forms;
 
@@ -31,7 +33,7 @@ namespace  PeakCanInitializationExample
                 result = Api.Uninitialize(channel);
                 if (result != PcanStatus.OK)
                 {
-                    // An error occurred
+                    // An error occurred 
                     Api.GetErrorText(result, out var errorText);
                     MessageBox.Show(errorText, "Error Finalizing", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
